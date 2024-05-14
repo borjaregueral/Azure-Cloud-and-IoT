@@ -1,0 +1,39 @@
+{
+	"name": "ASQLDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "deviceId",
+				"type": "varchar"
+			},
+			{
+				"name": "temperature",
+				"type": "varbinary"
+			},
+			{
+				"name": "humidity",
+				"type": "varchar"
+			},
+			{
+				"name": "EnqueuedTime",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Telemetries"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
