@@ -1,0 +1,19 @@
+{
+	"name": "diario_10PM",
+	"properties": {
+		"description": "Se ejectua diariamente",
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 24,
+				"startTime": "2024-05-11T10:00:00",
+				"endTime": "2024-05-14T23:59:00",
+				"timeZone": "Romance Standard Time"
+			}
+		}
+	}
+}
